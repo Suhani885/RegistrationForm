@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    background-color: #f0f0f0;
+    font-size: 8.5px;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    background-color: #fff;
+    width: 85%;
+    height: 100%;
+}
+
+.image1 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.image1 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.items {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.image2 img {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    margin-left: 140px;
+}
+
+.form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input {
+    padding: 3.5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    font-size: 7px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+.gen {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin-top: 8px;
+}
+
+.radio-container label {
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #7B8CDE; 
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 3.6px ;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 93%;
+    font-size: 10px;
+}
+
+.button:hover {
+    background-color: #b5b5f7;
+}
+
+.dropbtn {
+    color: black;
+    background-color: white;
+    padding: 2.5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 93%;
+    font-size: 8px;
+}
+
+#pass {
+    color: rgb(26, 100, 247);
+    font-size: 6px;
+    margin-top: -4px; 
+    margin-bottom: 3px;
+}

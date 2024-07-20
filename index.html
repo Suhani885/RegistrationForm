@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image1">
+            <img src="img.jpeg" alt="Image">
+        </div>
+        <div class="items">
+            <div class="image2">
+                <img src="image.jpeg" alt="KIET Logo">
+            </div>
+            <div class="form-container">
+                <form class="form" id="Form" name="form" autocomplete="on">
+                    <label for="name">Name</label>
+                    <input placeholder="Enter your name here" type="text" id="name" autocomplete="on" pattern="^[a-zA-Z\s]+$" maxlength="30" required>
+                    <label for="email">Email</label>
+                    <input placeholder="Enter your email here" id="email" autocomplete="on" type="email" pattern="[a-zA-Z0-9_\-\.]+[@][a-z]+[\.][a-z]{2,3}" required>
+                    <label for="address">Address</label>
+                    <input placeholder="Enter your address here" pattern="[A-Z1-9a-z]{1,5}[A-Za-z]{1,}" type="text" id="address" autocomplete="on" required>
+                    <label for="number">Phone Number</label>
+                    <input placeholder="Enter your phone number here" type="text" autocomplete="on" pattern="[6 7 8 9][0-9]{9}" id="number" required>
+                    <label for="residence">Residence</label>
+                        <select id="residence" class="dropbtn" required>
+                            <option selected value="null">Select</option>
+                            <option value="Hosteller">Hosteller</option>
+                            <option value="Dayscholar">Dayscholar</option>
+                        </select><br>
+                    <div class="gen">
+                    <p>Gender</p>
+                    <div class="radio-container">
+                        <label for="gender1">Male</label>
+                        <input type="radio" name="gender" id="gender1" value="male" required>
+                        <label for="gender2">Female</label>
+                        <input type="radio" name="gender" id="gender2" value="female" required>
+                    </div>
+                    </div>
+                    <label for="pass1">Password</label>
+                    <input placeholder="Enter password here " type="password" id="pass1" oninput="pattern0()" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}" required>
+                    <span id="pass" ></span>
+                    <label for="pass2">Confirm Password</label>
+                    <input placeholder="Enter password again" type="password" id="pass2" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}" required>
+                    <button class="button" id="button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
