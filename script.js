@@ -37,7 +37,7 @@ document.getElementById('Form').addEventListener('submit', function(event) {
 });
 
 function saveFormData(formData) {
-    let storedFormData = JSON.parse(localStorage.getItem('formData'));
+    let storedFormData = JSON.parse(localStorage.getItem('formData')) || [];
 
     storedFormData.push(formData);
     localStorage.setItem('formData',JSON.stringify(storedFormData));

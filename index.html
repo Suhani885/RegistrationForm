@@ -18,11 +18,11 @@
             <div class="form-container">
                 <form class="form" id="Form" name="form" autocomplete="on">
                     <label for="name">Name</label>
-                    <input placeholder="Enter your name here" type="text" id="name" autocomplete="on" pattern="^[a-zA-Z\s]+$" maxlength="30" required>
+                    <input placeholder="Enter your name here" type="text" id="name" autocomplete="on" pattern="[a-zA-Z]{1}[a-zA-Z\s]{1,30}" required>
                     <label for="email">Email</label>
                     <input placeholder="Enter your email here" id="email" autocomplete="on" type="email" pattern="[a-zA-Z0-9_\-\.]+[@][a-z]+[\.][a-z]{2,3}" required>
                     <label for="address">Address</label>
-                    <input placeholder="Enter your address here" pattern="[A-Z1-9a-z]{1,5}[A-Za-z]{1,}" type="text" id="address" autocomplete="on" required>
+                    <input placeholder="Enter your address here" pattern="[A-Z1-9a-z]{1,5}[A-Za-z]{1,}[A-Z1-9a-z]{1,50}" type="text" id="address" autocomplete="on" required>
                     <label for="number">Phone Number</label>
                     <input placeholder="Enter your phone number here" type="text" autocomplete="on" pattern="[6 7 8 9][0-9]{9}" id="number" required>
                     <label for="residence">Residence</label>
